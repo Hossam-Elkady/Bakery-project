@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4{
+    font-family: 'alegreya';
+    font-weight: lighter;
+}
+#home p{
+    width: 62%;
+    font-size: 24px;
+    line-height: 1.86em;
+    margin-bottom: 20px;
+}
+body{
+    overflow-x: hidden;
+}
+.gold{
+    color: #8E7754;
+}
+
+.bg-gold{
+    background-color: #8E7754 !important;
+}
+.home p{
+    line-height: 30px;
+    font-size: 20px;
+}
+.home{
+    color: white !important;
+}
+.brder{
+    width: 240px;
+    height: 1px;
+    /* background-color: #666056; */
+    margin: auto;
+}
+.navbar{
+    height: 90px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    z-index: 88;
+}
+.nav-link{
+    color: white !important;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: 'alegreya';
+    font-weight: 400;
+    transition: all 0.25s;
+}
+.nav-link:hover {
+    color: #AE9768 !important;
+}
+.navbar-brand img{
+    width: 60%;
+    margin: 15px 0 0 -50px;
+}
+
+.home{
+    height: 800px;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/drew-coffman-1872.jpg); 
+    background-size: 100% 100%;
+}
+.btn1{
+    background-color: #8E7754;    
+    padding: 15px 20px;
+    color: white;
+    border:2PX solid transparent;
+    transition: all 0.25s;
+}
+.btn2{
+    border: 2px solid white;
+    background-color: transparent; 
+    color: white;
+    padding: 15px 20px;
+    transition: all 0.25s;
+}
+.home button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2PX solid transparent;
+}
+li{
+    list-style: none;
+}
+.gray{
+    color: #686868;
+}
+i{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+p{
+    font-size: 17px;
+    line-height: 32px;
+}
+.w-90{
+    width: 90%;
+}
+.sec6{
+    background-image: linear-gradient( rgba(64, 61, 56,0.9), rgba(64, 61, 56,0.9)) ,url(../images/contact-details-map.png);
+}
+.sec6 p{
+    color: #969696;
+    font-size: 16px;
+}
+.sec6 li {
+    color: #a5a5a5;
+    border-bottom: 1px solid rgba(150, 150, 150,0.5);
+}
+.sec6 :last-child{
+    border: none;
+}
+.sec6 i{
+    margin: 0;
+    padding: 0;
+}
+footer{
+    color: #969696;
+    background-color: #403D38;
+}
+
+footer i{
+    border-radius: 50%;
+    text-decoration: none;
+    color: #969696;
+    background-color: #484540;
+    border-radius: 50%;
+    font-size: 23px;
+}
+
+ footer a .fa-facebook-f:hover{    
+    color: white;
+    background-color: #4267B2;
+}
+footer a .fa-google-plus-g:hover{
+    color: white;    
+    background-color: #db4a39;
+}
+footer a .fa-linkedin-in:hover{
+    color: white;
+    background-color: #0077b5;
+}
+footer a .fa-twitter:hover{
+    background-color: #1DA1F2;
+    color: white;
+}
+#arrow{
+    bottom: 5px;
+    right: 5px;
+}
+#arrow i{
+    color: black;
+    font-size: 30px;
+}
+.scrolling-active{
+    height: 4rem;
+    background-color: white !important;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
+}
+.scrolling-active .nav-link{
+    color: black !important;
+}
+.scrolling-active .nav-link:hover{
+    color: #AE9768 !important;
+}
+/* .left{
+    transform: translate(50%,-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.right{
+    transform: translate(50%,-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.center{
+    transform: translate(0%,0%);
+} */
