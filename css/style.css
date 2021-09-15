@@ -58,7 +58,7 @@ body{
 }
 .navbar-brand img{
     width: 60%;
-    margin: 15px 0 0 -50px;
+    margin: 15px 0 0 0px;
 }
 
 .home{
@@ -160,7 +160,7 @@ footer a .fa-twitter:hover{
     font-size: 30px;
 }
 .scrolling-active{
-    height: 4rem;
+    height: 4.5rem;
     background-color: white !important;
     box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
 }
@@ -170,6 +170,24 @@ footer a .fa-twitter:hover{
 .scrolling-active .nav-link:hover{
     color: #AE9768 !important;
 }
+@media (max-width: 1000px) {
+    .navbar-collapse
+    {
+        border-radius: 5%;
+        background-color:white;
+        text-align: center;
+    }
+    .nav-link{
+        color: black !important;
+    }
+}
+/* @media screen and (max-width:1000px) {
+    .navbar-brand img{
+        width: 60%;
+        padding-bottom: 10px;
+    }
+
+} */
 /* .left{
     transform: translate(50%,-50%);
     opacity: 0;
