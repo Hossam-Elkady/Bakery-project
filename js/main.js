@@ -8,7 +8,7 @@ window.addEventListener('scroll', function () {
         $(".bar3").css("background-color","white" )
     }
     else {
-        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-color.png" alt="" style="width: 11.25rem; height:3rem;"  class="my-auto">`
+        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-color.png" alt=""   class="my-auto">`
         $(".bar1").css("background-color","black" )
         $(".bar2").css("background-color","black" )
         $(".bar3").css("background-color","black" )

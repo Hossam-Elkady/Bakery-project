@@ -23,15 +23,15 @@ h1,h2,h3,h4{
     transition: 0.4s;
 }
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 /* ============================================================================== */
 #home h2{
@@ -90,7 +90,7 @@ nav{
     color: #AE9768 !important;
 }
 .navbar-brand img{
-    width: 12.5rem;
+    width: 200px;
     margin: 15px 0 0 0px;
 }
 
@@ -247,6 +247,8 @@ footer img{
     }
     #home p{
         width: 100%;
+        font-size: 16px;
+        font-weight: 400;
     }
     #home h1{
         font-size: 34px;
@@ -254,9 +256,8 @@ footer img{
     #home h2{
         font-size: 22px;
     }
-    #home p{
-        font-size: 15px;
-        font-weight: 400;
+    .navbar-brand img{
+        width: 150px;
     }
     button{
         font-size: 14px;
@@ -275,4 +276,25 @@ footer img{
     footer a i{
         font-size: 16px;
     }
+    .navbar-brand img{
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    .scrolling-active img{
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    .scrolling-active{
+        height: 4rem;
+        background-color: white !important;
+        box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
+    }
+    .bar1, .bar2, .bar3 {
+        width: 20px;
+        height: 1px;
+        background-color: white;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
 }
+
