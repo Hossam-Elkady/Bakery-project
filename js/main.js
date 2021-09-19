@@ -5,7 +5,7 @@ window.addEventListener('scroll', function () {
         document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-light-1.png" alt="" class="my-auto">`
     }
     else {
-        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-color.png" alt="" style="width: 180px; height:48px;"  class="my-auto">`
+        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-color.png" alt="" style="width: 11.25rem; height:3rem;"  class="my-auto">`
     }
     nav.classList.toggle("scrolling-active", windowPosition)
 });
