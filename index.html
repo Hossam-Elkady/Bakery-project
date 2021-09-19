@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +26,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedcontent" aria-controls="navbarSupportedcontent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <div class="contain" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedcontent">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
@@ -278,7 +283,7 @@
     </section>
     <footer>
         <div class="container py-5 text-center m-auto">
-            <img src="images/bakery-light-1.png" alt="" class="py-5">
+            <img src="images/bakery-light-1.png" alt="bakery-light-1" class="py-5">
             <p>Copyright 2017. All rights reserved.</p>
             <a href=""><i class="fab fa-facebook-f px-3 "></i></a>
             <a href=""><i class="fab fa-google-plus-g px-2 mr-2"></i></a>
@@ -287,7 +292,9 @@
         </div>
     </footer>
     <a href="#home" class="position-fixed" id="arrow">
-        <i class="fa fa-angle-up text-white"></i></a>
+        <i class="fa fa-angle-up text-white"></i>
+    </a>
+
     <script src=" js/popper.min.js">
     </script>
     <script src="js/bootstrap.min.js"></script>

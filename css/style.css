@@ -10,9 +10,39 @@ h1,h2,h3,h4{
     font-family: 'alegreya';
     font-weight: lighter;
 }
+/* ==============================toggle================================== */
+.contain {
+    display: inline-block;
+    /* cursor: pointer; */
+}
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* ============================================================================== */
+#home h2{
+    font-size: 1.375rem;
+}
+#home h1{
+    font-size: 4.563 rem;
+}
 #home p{
     width: 62%;
-    font-size: 24px;
+    font-size: 1.5rempx;
     line-height: 1.86em;
     margin-bottom: 20px;
 }
@@ -59,7 +89,7 @@ nav{
     color: #AE9768 !important;
 }
 .navbar-brand img{
-    width: 60%;
+    width: 12.5rem;
     margin: 15px 0 0 0px;
 }
 
@@ -72,11 +102,11 @@ nav{
     background-color: #8E7754;    
     padding: 15px 20px;
     color: white;
-    border:2PX solid transparent;
+    border:2px solid transparent;
     transition: all 0.25s;
 }
 .btn2{
-    border: 2px solid white;
+    border:2px solid white;
     background-color: transparent; 
     color: white;
     padding: 15px 20px;
@@ -123,6 +153,7 @@ p{
     margin: 0;
     padding: 0;
 }
+
 footer{
     color: #969696;
     background-color: #403D38;
@@ -153,24 +184,8 @@ footer a .fa-twitter:hover{
     background-color: #1DA1F2;
     color: white;
 }
-#arrow{
-    bottom: 5px;
-    right: 5px;
-}
-#arrow i{
-    color: black;
-    font-size: 30px;
-}
-.scrolling-active{
-    height: 4.5rem;
-    background-color: white !important;
-    box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
-}
-.scrolling-active .nav-link{
-    color: black !important;
-}
-.scrolling-active .nav-link:hover{
-    color: #AE9768 !important;
+footer img{
+    max-width: 100%;
 }
 #arrow{
     text-decoration: none;
@@ -187,6 +202,17 @@ footer a .fa-twitter:hover{
 #arrow:hover i{
     opacity: 1;
 }
+.scrolling-active{
+    height: 4.5rem;
+    background-color: white !important;
+    box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
+}
+.scrolling-active .nav-link{
+    color: black !important;
+}
+.scrolling-active .nav-link:hover{
+    color: #AE9768 !important;
+}
 @media (max-width: 1000px) {
     .navbar-collapse
     {
@@ -198,23 +224,49 @@ footer a .fa-twitter:hover{
         color: black !important;
     }
 }
-/* @media screen and (max-width:1000px) {
-    .navbar-brand img{
-        width: 60%;
-        padding-bottom: 10px;
+@media (max-width: 1000px) {
+    .navbar-collapse
+    {
+        border-radius: 5%;
+        background-color:white;
+        text-align: center;
     }
-
-} */
-/* .left{
-    transform: translate(50%,-50%);
-    opacity: 0;
-    transition: all 1s ease-in-out;
+    .nav-link{
+        color: black !important;
+    }
 }
-.right{
-    transform: translate(50%,-50%);
-    opacity: 0;
-    transition: all 1s ease-in-out;
+@media screen and (max-width: 767px) {
+    #home{
+        height: 50vh;
+    }
+    #home p{
+        width: 100%;
+    }
+    #home h1{
+        font-size: 34px;
+    }
+    #home h2{
+        font-size: 22px;
+    }
+    #home p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    button{
+        font-size: 14px;
+    }
+    .btn1,.btn2{
+        padding: 10px 17px;
+    }
+    p,span{
+        font-size: 17px;
+        font-weight: 400;
+    font-family: 'Alegreya Sans', sans-serif;
+    } 
+    footer img{
+        max-width: 200px;
+    }
+    footer a i{
+        font-size: 16px;
+    }
 }
-.center{
-    transform: translate(0%,0%);
-} */
