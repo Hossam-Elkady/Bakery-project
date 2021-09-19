@@ -290,11 +290,19 @@ footer img{
         box-shadow: 0 3px 1rem rgba(0,0,0,0.3);
     }
     .bar1, .bar2, .bar3 {
-        width: 20px;
+        width: 15px;
         height: 1px;
         background-color: white;
         margin: 5px 0;
         transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-6px,3px);
+        transform: rotate(-45deg) translate(-6px, 3px);
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -3px);
+        transform: rotate(45deg) translate(-6px, -3px);
     }
 }
 
