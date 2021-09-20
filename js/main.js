@@ -23,6 +23,13 @@ window.addEventListener('scroll', function () {
     let windowPosition = window.scrollY > 50;
     aboutNavJs.toggleClass("about-scrolling-active", windowPosition);
 });
+
+window.addEventListener('scroll', function () {
+    let ourOfferNavJs = $("#ourOffer");
+    let windowPosition = window.scrollY > 50;
+    ourOfferNavJs.toggleClass("about-scrolling-active", windowPosition);
+});
+
 function myFunction(x) {
     x.classList.toggle("change");
 }

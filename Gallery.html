@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Engage Bakery</title>
+    <title>Gallery - Engage Bakery</title>
     <link rel="icon" href="images/icon.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class=" navbar navbar-expand-lg about-scrolling fixed-top" id="aboutNav">
+    <nav class=" navbar navbar-expand-lg about-scrolling fixed-top" id="ourOffer">
         <div class="container">
-            <a class="navbar-brand my-auto" id="navbar-brand" href="#"><img src="images/bakery-color.png" alt="" class="my-auto"></a>
+            <a class="navbar-brand my-auto" id="navbar-brand" href="#"><img src="images/bakery-color.png" alt=""
+                    class="my-auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedcontent" aria-controls="navbarSupportedcontent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,13 +37,13 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="ourOffer.html">Our Offer</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Gallery.html">Gallery</a>
+                        <a class="nav-link" href="#">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
@@ -53,122 +54,80 @@
             </div>
         </div>
     </nav>
-
-    <section class="about" id="firstPage">
-        <div class="d-flex flex-column text-white text-center py-5">
-            <h2 class="h1">About</h2>
-            <p>Learn more about us.</p>
-        </div>
-    </section>
-    <section class="container">
-        <div class="row py-5 my-5">
-            <div class="col-lg-6">
-                <img src="images/roman-kraft-56589-600x600.jpg" class="w-100" alt="">
-            </div>
-            <div class="col-lg-6">
-                <h3 class="my-3 pt-5 pb-3 pl-3">Our Story</h3>
-                <p class=" pl-3 pb-3 gray">
-                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
-                    work on projects big and small from small residential extensions to full house and commercial builds
-                    and we are registered NHBC house builders.
-                </p>
-                <p class=" pl-3 py-3 gray">
-                    I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                </p>
-            </div>
+    <section class="Gallery bg-light" id="firstPage">
+        <div class="d-flex flex-column text-center py-5 text-dark">
+            <h2 class="h1 pt-2">Gallery</h2>
+            <p class="font-weight-normal gray">Awesome gallery showcasing our artisan bakings.</p>
         </div>
     </section>
 
-    <section class="bg-light">
-        <div class="container">
-            <div class="d-flex flex-column py-5 text-center">
-                <i class="fas fa-bread-slice gold fa-2x"></i>
-                <h2>Why our Bakery?</h2>
-                <p class="gray">Learn why it's worth to try our bakings.</p>
-            </div>
-            <div class="row pt-2 pb-5">
-                <div class="col-lg-4 mb-5">
-                    <h5 class="pb-3">
-                        Facilities
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
-                    </p>
+    <section>
+        <div class="container py-5 gallery">
+            <div class="row py-5">
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/roman-kraft-56589-600x600.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="pb-3">
-                        Best Equipment
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/stas-ovsky-123540-600x600.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="pb-3">
-                        Incredible Location
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/clem-onojeghuo-206832-600x600.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="pb-3">
-                        Premium Support
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
-                    </p>
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/ben-garratt-134774-600x600.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="pb-3">
-                        Incredible Team
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
-                    </p>
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/download.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5 class="pb-3">
-                        Incredible Location
-                    </h5>
-                    <p class="gray pb-3">
-                        Ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultricies nisi at scelerisque
-                        pellentesque. Nunc feugiat felis vitae aliquet consequat. Aliquam ullamcorper.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-gold" id="data">
-        <div class="container">
-            <div class="row">
-                <div class="d-flex flex-column text-center text-white col-lg-3 col-md-6 py-5">
-                    <i class="far fa-thumbs-up text-white fa-2x"></i>
-                    <h5 class="">1430</h5>
-                    <p>Pages Likes</p>
-                </div>
-                <div class="d-flex flex-column  text-center text-white col-lg-3 col-md-6 py-5">
-                    <i class="fas fa-store text-white fa-2x"></i>
-                    <h5 class="">64</h5>
-                    <p>Locations</p>
-                </div>
-                <div class="d-flex flex-column text-center  text-white col-lg-3 col-md-6 py-5">
-                    <i class="far fa-lightbulb text-white fa-2x"></i>
-                    <h5 class="">960</h5>
-                    <p>Great Ideas</p>
-                </div>
-                <div class="d-flex flex-column  text-center text-white col-lg-3 col-md-6 py-5">
-                    <i class="far fa-comment text-white fa-2x"></i>
-                    <h5 class="">420</h5>
-                    <p>Comments</p>
+                <div class="col-lg-4 overflow-hidden mb-5">
+                    <div class="position-relative galleryItems">
+                        <img src="images/alexandru-stavrica-170390-600x600.jpg" class="img-fluid" alt="">
+                        <div class=" h-100 hoverShow">
+                            <div class="overlay h-100 position-absolute">
+                                <i class="fas fa-search text-white fa-2x"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="sec6">
         <div class="container py-5">
             <div class="row py-2">
@@ -270,8 +229,9 @@
         <i class="fa fa-angle-up text-white"></i>
     </a>
 
-    <script src=" js/popper.min.js">
-    </script>
+
+
+    <script src=" js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"

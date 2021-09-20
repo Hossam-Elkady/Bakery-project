@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Alegreya Sans', sans-serif;
-    font-weight: bold;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -93,7 +92,7 @@ nav{
     font-weight: 400;
     transition: all 0.25s;
 }
-.nav-link:hover {
+.nav-link:hover,.ourOffer a:hover,.contact a:hover {
     color: #AE9768 !important;
 }
 .navbar-brand img{
@@ -236,16 +235,14 @@ footer img{
     background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/drew-coffman-1872.jpg);
     background-position: center bottom;
 }
-.about h2{
+.about h2,.ourOffer h2{
     font-family: 'alegreya';
     font-size: 56px;
 }
-.about p{
+.about p,.ourOffer p{
     font-weight: 400;
     font-size: 18px;
-}
-p{
-    font-weight: 500;
+    font-weight: 400;
 }
 #data h5{
     font-size: 52px;
@@ -253,7 +250,7 @@ p{
 #data p{
     font-size: 20px;
 }
-#firs-Page{
+#firstPage{
     margin-top: 70px;
 }
 .about-scrolling{
@@ -378,4 +375,78 @@ p{
         -webkit-transform: rotate(45deg) translate(-6px, -3px);
         transform: rotate(45deg) translate(-6px, -3px);
     }
+}
+/* ========================================our offer======================================================= */
+
+.ourOffer,.contactPage{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/drew-coffman-1872.jpg);
+    background-position: center center;
+}
+.ourOffer h2{
+    font-family: 'alegreya';
+    font-size: 56px;
+}
+.ourOffer p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.lightGray{
+    color: #888888;
+}
+
+/* =========================================Gallery================================================================== */
+
+.Gallery h2{
+    color: #303030;
+}
+.overlay{
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.galleryItems{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galleryItems img{
+    transition: 0.5s;
+}
+.hoverShow{
+    display: none;
+}
+.overlay i{
+    z-index: 1;
+}
+.galleryItems:hover img{
+    transform: scale(1.1);
+}
+
+.galleryItems:hover .hoverShow{
+    display: block !important;
+}
+/* ================================contactPadge==================================================================== */
+input{
+    box-shadow: none !important;
+    padding: 12px 12px !important;
+    height: 50px !important;
+    margin-bottom: 20px;
+    border-color: #dadada !important;
+}
+input:focus{
+    border-color: #8E7754 !important;
+}
+textarea{
+    box-shadow: none !important;
+    border-color: #dadada !important;
+}
+textarea:focus{
+    border-color: #8E7754 !important;
+    padding: 12px 12px !important;
 }
