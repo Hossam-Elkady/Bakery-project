@@ -1,19 +1,27 @@
 window.addEventListener('scroll', function () {
-    let nav = document.querySelector("nav")
-    let windowPosition = window.scrollY > 20;
+    let indexNavJs = $("#indexNav");
+    let windowPosition = window.scrollY > 50;
+    console.log(windowPosition)
     if (windowPosition == 0) {
-        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-light-1.png" alt="" class="my-auto">`
-        $(".bar1").css("background-color","white" )
-        $(".bar2").css("background-color","white" )
-        $(".bar3").css("background-color","white" )
+        $("#indexNav #navbar-brand").html(`<img src="images/bakery-light-1.png" alt="" class="my-auto">`);
+        $(".indexBars .bar1").css("background-color", "white")
+        $(".indexBars .bar2").css("background-color", "white")
+        $(".indexBars .bar3").css("background-color", "white")
     }
     else {
-        document.getElementById("navbar-brand").innerHTML = `<img src="images/bakery-color.png" alt=""   class="my-auto">`
-        $(".bar1").css("background-color","black" )
-        $(".bar2").css("background-color","black" )
-        $(".bar3").css("background-color","black" )
+        $("#indexNav #navbar-brand").html(`<img src="images/bakery-color.png" alt="" class="my-auto">`);
+        $(".indexBars .bar1").css("background-color", "black")
+        $(".indexBars .bar2").css("background-color", "black")
+        $(".indexBars .bar3").css("background-color", "black")
     }
-    nav.classList.toggle("scrolling-active", windowPosition)
+    indexNavJs.toggleClass("index-scrolling-active", windowPosition);
+});
+
+
+window.addEventListener('scroll', function () {
+    let aboutNavJs = $("#aboutNav");
+    let windowPosition = window.scrollY > 50;
+    aboutNavJs.toggleClass("about-scrolling-active", windowPosition);
 });
 function myFunction(x) {
     x.classList.toggle("change");
