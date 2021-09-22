@@ -6,12 +6,24 @@
     scroll-behavior: smooth;
 }
 
+
+
 h1,
 h2,
 h3,
 h4 {
     font-family: "alegreya";
     font-weight: lighter;
+}
+
+.loading {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 999999999999999;
+    background-color: white;
 }
 
 /* ==============================toggle================================== */
@@ -73,8 +85,15 @@ h4 {
 }
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
+
+/* ======================================== */
+
+
+
+
+/* ======================================= */
 
 .gold {
     color: #8e7754;
@@ -435,13 +454,14 @@ textarea:focus {
     box-shadow: none;
 }
 
-.sendBtn:hover,.blog-card:hover {
+.sendBtn:hover,
+.blog-card:hover {
     background-color: black !important;
     transition: 0.5s;
 }
 
 
-.blog-input input{
+.blog-input input {
     height: 40px !important;
     border-color: #e6e6e6 !important;
 }
@@ -461,19 +481,23 @@ textarea:focus {
     .nav-link {
         color: black !important;
     }
-    .toLeft{
+
+    .toLeft {
         text-align: left;
         margin-left: 0px;
     }
-    .toLeft{
+
+    .toLeft {
         text-align: left;
         width: 100% !important;
         padding: 0px !important;
     }
-    .blogTop{
+
+    .blogTop {
         margin-bottom: 40px !important;
     }
-    .BlogContainer .col-lg-4{
+
+    .BlogContainer .col-lg-4 {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
@@ -582,15 +606,18 @@ textarea:focus {
         -webkit-transform: rotate(45deg) translate(-6px, -3px);
         transform: rotate(45deg) translate(-6px, -3px);
     }
-    .toLeft{
+
+    .toLeft {
         text-align: left;
         width: 100% !important;
         padding: 0px !important;
     }
-    .blogTop{
+
+    .blogTop {
         margin-bottom: 40px !important;
     }
-    .BlogContainer .col-lg-4{
+
+    .BlogContainer .col-lg-4 {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
