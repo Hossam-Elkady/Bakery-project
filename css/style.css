@@ -64,10 +64,12 @@ h4 {
 }
 
 .home p {
-    width: 62%;
-    font-size: 24px;
+    width: 52%;
     line-height: 1.86em;
     margin-bottom: 20px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 body {
@@ -86,11 +88,6 @@ nav {
     background-color: #8e7754 !important;
 }
 
-.home p {
-    line-height: 30px;
-    font-size: 20px;
-    font-weight: 400;
-}
 
 /* .home{
     color: white !important;
@@ -443,7 +440,16 @@ textarea:focus {
     transition: 0.5s;
 }
 
+
+.blog-input input{
+    height: 40px !important;
+    border-color: #e6e6e6 !important;
+}
+
 /* ===============================================mediaQuery================================================= */
+
+
+
 
 @media (max-width: 1000px) {
     .navbar-collapse {
@@ -475,7 +481,7 @@ textarea:focus {
     }
 
     .home p {
-        width: 100%;
+        width: 100% !important;
         font-size: 16px;
         font-weight: 400;
     }
@@ -572,11 +578,4 @@ textarea:focus {
         -webkit-transform: rotate(45deg) translate(-6px, -3px);
         transform: rotate(45deg) translate(-6px, -3px);
     }
-}
-.blog-input input{
-    height: 40px !important;
-    border-color: #e6e6e6 !important;
-}
-ol li{
-    list-style: ;
 }

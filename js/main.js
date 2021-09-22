@@ -1,6 +1,6 @@
 window.addEventListener('scroll', function () {
     let indexNavJs = $("#indexNav");
-    let windowPosition = window.scrollY > 50;
+    let windowPosition = window.scrollY > 25;
     console.log(windowPosition)
     if (windowPosition == 0) {
         $("#indexNav #navbar-brand").html(`<img src="images/bakery-light-1.png" alt="" class="my-auto">`);
@@ -20,13 +20,13 @@ window.addEventListener('scroll', function () {
 
 window.addEventListener('scroll', function () {
     let aboutNavJs = $("#aboutNav");
-    let windowPosition = window.scrollY > 50;
+    let windowPosition = window.scrollY > 25;
     aboutNavJs.toggleClass("about-scrolling-active", windowPosition);
 });
 
 window.addEventListener('scroll', function () {
     let ourOfferNavJs = $("#ourOffer");
-    let windowPosition = window.scrollY > 50;
+    let windowPosition = window.scrollY > 25;
     ourOfferNavJs.toggleClass("about-scrolling-active", windowPosition);
 });
 
