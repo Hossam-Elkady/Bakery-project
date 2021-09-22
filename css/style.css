@@ -461,17 +461,21 @@ textarea:focus {
     .nav-link {
         color: black !important;
     }
-}
-
-@media (max-width: 1000px) {
-    .navbar-collapse {
-        border-radius: 5%;
-        background-color: white;
-        text-align: center;
+    .toLeft{
+        text-align: left;
+        margin-left: 0px;
     }
-
-    .nav-link {
-        color: black !important;
+    .toLeft{
+        text-align: left;
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .blogTop{
+        margin-bottom: 40px !important;
+    }
+    .BlogContainer .col-lg-4{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
 
@@ -577,5 +581,17 @@ textarea:focus {
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-6px, -3px);
         transform: rotate(45deg) translate(-6px, -3px);
+    }
+    .toLeft{
+        text-align: left;
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .blogTop{
+        margin-bottom: 40px !important;
+    }
+    .BlogContainer .col-lg-4{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
