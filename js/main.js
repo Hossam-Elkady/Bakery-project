@@ -1,7 +1,6 @@
 window.addEventListener('scroll', function () {
     let indexNavJs = $("#indexNav");
     let windowPosition = window.scrollY > 25;
-    console.log(windowPosition)
     if (windowPosition == 0) {
         $("#indexNav #navbar-brand").html(`<img src="images/bakery-light-1.png" alt="" class="my-auto">`);
         $(".indexBars .bar1").css("background-color", "white")
