@@ -21,7 +21,7 @@ h4 {
 /* ==============================toggle================================== */
 .contain {
     display: inline-block;
-    /* cursor: pointer; */
+    
 }
 
 .indexBars .bar1,
@@ -76,9 +76,7 @@ h4 {
     font-weight: 400;
 }
 
-body {
-    overflow: hidden;
-}
+
 
 /* ======================================== */
 
