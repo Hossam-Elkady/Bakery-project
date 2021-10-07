@@ -34,28 +34,3 @@ window.addEventListener("scroll", function () {
 function myFunction(x) {
     x.classList.toggle("change");
 }
-
-$("document").ready(function () {
-    $(".loadingDiv")
-        .addClass("loading")
-        .delay(2000)
-        .queue(function () {
-            $(this).removeClass("loading");
-            $("body").css("overflow","auto")
-            $(".loadingDiv").css("display","none")
-        });
-});
-
-// $("document").ready(function () {
-//     $(".loading").animate({ "display": "none"},3000, function () {
-//         $("body").css("overflow", "auto");
-//     });
-// });
-
-
-
-// $("document").ready(function () {
-//     $(".loading").fadeOut(3000, function () {
-//         $("body").css("overflow", "auto");
-//     });
-// });
